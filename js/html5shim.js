@@ -86,3 +86,11 @@ function setErrorMessages(formControl) {
         videoEl.addEventListener('canplaythrough', function () {
     vidControls.classList.remove('hidden');
 }, false);
+        
+        playPauseBtn.addEventListener('click', function () {
+    if (videoEl.paused) {
+    videoEl.play();
+    } else {
+    videoEl.pause();
+    }
+}, false);
