@@ -80,3 +80,5 @@ function setErrorMessages(formControl) {
         vidControls = document.getElementById('controls'),
         muteBtn = document.getElementById('muteUnmute'),
         timeHolder = document.getElementById('timer');
+        
+        videoEl.removeAttribute('controls');
