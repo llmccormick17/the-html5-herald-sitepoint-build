@@ -33,3 +33,8 @@ main > div {
     background: #484848; 
     color: #fff; 
 }
+
+form {
+    …
+    background: url(../images/bg-form.png) no-repeat bottom center rgba(0, 0, 0, 0.2);
+}
