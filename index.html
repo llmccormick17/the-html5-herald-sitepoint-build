@@ -23,7 +23,8 @@
 
         <main role="main">
             <div class="primary">
-                <article>
+                <article id="act1">
+                    <div class="vc">
                     <video width="375" height="280" poster="teaser.jpg" audio="muted">
                         <source src="example.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                         <source src="example.webm" type='video/webm; codecs="vp8, vorbis"'>
@@ -38,13 +39,14 @@
                             <img src="teaser.jpg" width="375" height="280" alt="" title="No video playback capabilities">
                         </object>
                     </video>
+                     <canvas id="canvasOverlay" width="373" height="280"></canvas>
                     <div id="controls" class="hidden">
                         <a id="playPause">Play/Pause</a>
                         <span id="timer">00:00</span>
                         <a id="muteUnmute">Mute/Unmute</a>
-                    </div>
+                    </div> <!--controls -->
                 </article>
-            </div>
+            </div> <!--vc -->
 
             <div class="secondary">
                 <article></article>
