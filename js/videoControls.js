@@ -55,3 +55,7 @@ contentLoaded(window, function () {
     muteBtn.classList.remove('muted');
     }
 }, false);
+
+    videoEl.addEventListener('ended', function () {
+    videoEl.currentTime = 0;
+}, false);
