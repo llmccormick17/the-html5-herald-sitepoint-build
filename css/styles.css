@@ -19,3 +19,8 @@ input:focus:invalid {
 input:focus:valid { 
     background-image: url('../images/valid.png');
 }
+
+main > div {
+    float: left;
+    overflow: hidden;
+}
