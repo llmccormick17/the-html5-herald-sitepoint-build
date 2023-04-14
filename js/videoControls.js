@@ -59,3 +59,38 @@ contentLoaded(window, function () {
     videoEl.addEventListener('ended', function () {
     videoEl.currentTime = 0;
 }, false);
+    
+    videoEl.addEventListener('timeupdate', function () {
+    timeHolder.innerHTML = secondsToTime(videoEl.currentTime);
+}, false);
+var h = Math.floor(s / (60 * 60)),
+    dm = s % (60 * 60),
+    m = Math.floor(dm / 60),
+    ds = dm % 60,
+    secs = Math.ceil(ds);
+    if (secs === 60) {
+    secs = 0;
+    m = m + 1;
+}
+
+if (secs < 10) {
+    secs = '0' + secs;
+}
+
+if (m === 60) {
+    m = 0;
+    h = h + 1;
+}
+
+if (m < 10) {
+    m = '0' + m;
+}
+    if (h === 0) {
+    fulltime = m + ':' + secs;
+} else {
+    fulltime = h + ':' + m + ':' + secs;
+}
+
+return fulltime;
+    timeHolder.innerHTML = secondsToTime(videoEl.currentTime);
+   
