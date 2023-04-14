@@ -82,3 +82,7 @@ function setErrorMessages(formControl) {
         timeHolder = document.getElementById('timer');
         
         videoEl.removeAttribute('controls');
+        
+        videoEl.addEventListener('canplaythrough', function () {
+    vidControls.classList.remove('hidden');
+}, false);
