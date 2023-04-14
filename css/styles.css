@@ -24,3 +24,12 @@ main > div {
     float: left;
     overflow: hidden;
 }
+
+::-moz-selection { 
+    background: #484848;
+    color: #fff;
+} 
+::selection { 
+    background: #484848; 
+    color: #fff; 
+}
