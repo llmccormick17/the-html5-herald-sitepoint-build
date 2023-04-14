@@ -47,3 +47,11 @@ contentLoaded(window, function () {
             videoEl.muted = true;
         }
     }, false);
+
+    videoEl.addEventListener('volumechange', function () {
+    if (videoEl.muted) {
+    muteBtn.classList.add('muted');
+    } else {
+    muteBtn.classList.remove('muted');
+    }
+}, false);
