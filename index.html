@@ -23,7 +23,22 @@
 
         <main role="main">
             <div class="primary">
-                <article></article>
+                <article>
+                    <video width="375" height="280" poster="teaser.jpg" audio="muted">
+                        <source src="example.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="example.webm" type='video/webm; codecs="vp8, vorbis"'>
+                        <source src="example.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                        <!-- fallback to Flash: -->
+                        <object width="375" height="280" type="application/x-shockwave-flash" data="mediaplayer-5.5/player.swf">
+                            <param name="movie" value="mediaplayer-5.5/player.swf">
+                            <param name="allowFullScreen" value="true">
+                            <param name="wmode" value="transparent">
+                            <param name="flashvars" value="controlbar=over&image=images/teaser.jpg&file=example.mp4">
+                            <!-- fallback image -->
+                            <img src="teaser.jpg" width="375" height="280" alt="" title="No video playback capabilities">
+                        </object>
+                    </video>
+                </article>
             </div>
 
             <div class="secondary">
