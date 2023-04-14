@@ -73,24 +73,3 @@ function setErrorMessages(formControl) {
         formControl.setCustomValidity('');
     }
 }
-
-        
-      var videoEl = document.getElementsByTagName('video')[0],
-        playPauseBtn = document.getElementById('playPause'),
-        vidControls = document.getElementById('controls'),
-        muteBtn = document.getElementById('muteUnmute'),
-        timeHolder = document.getElementById('timer');
-        
-        videoEl.removeAttribute('controls');
-        
-        videoEl.addEventListener('canplaythrough', function () {
-    vidControls.classList.remove('hidden');
-}, false);
-        
-        playPauseBtn.addEventListener('click', function () {
-    if (videoEl.paused) {
-    videoEl.play();
-    } else {
-    videoEl.pause();
-    }
-}, false);
